@@ -56,10 +56,14 @@ placeholders:
           - componentName: ContentBlock
             fields:
               heading: Content Block, Main 
+          - componentName: Button
         jss-sidebar:
           - componentName: ContentBlock
             fields:
               heading: Content Block, Sidebar
+          - componentName: TextInput
+            fields:
+              heading: TextInput
   jss-pagefoot:
     - componentName: Footer
       placeholders:

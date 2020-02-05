@@ -1,0 +1,21 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { default as TextInput } from './index.js';
+export const fields = {
+    heading: {
+        value: 'Sample Heading'
+    }
+};
+
+<Meta title="Components/TextInput" component={TextInput} />
+
+# TextInput
+This is the default example for the TextInput component.
+
+<Preview>
+    <Story name="Example">
+        <TextInput fields={fields} />
+    </Story>
+</Preview>
+
+## Props
+<Props of={TextInput} />

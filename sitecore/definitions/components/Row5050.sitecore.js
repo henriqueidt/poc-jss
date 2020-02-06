@@ -1,19 +1,16 @@
 // eslint-disable-next-line no-unused-vars
-import { SitecoreIcon, Manifest, CommonFieldTypes } from '@sitecore-jss/sitecore-jss-manifest';
-import { placeholders } from '../../../src/config/index.json';
+import { CommonFieldTypes, SitecoreIcon, Manifest } from '@sitecore-jss/sitecore-jss-manifest';
 
 /**
- * Adds the Header component to the disconnected manifest.
+ * Adds the Row5050 component to the disconnected manifest.
  * This function is invoked by convention (*.sitecore.js) when 'jss manifest' is run.
  * @param {Manifest} manifest Manifest instance to add components to
  */
-export default function (manifest) {
+export default function(manifest) {
   manifest.addComponent({
-    name: 'Header',
+    name: 'Row5050',
     icon: SitecoreIcon.DocumentTag,
-    // placeholders: [
-    //   placeholders.header
-    // ],
+    placeholders: ['jss-row-5050-left', 'jss-row-5050-right'],
     fields: [
       { name: 'heading', type: CommonFieldTypes.SingleLineText },
     ],

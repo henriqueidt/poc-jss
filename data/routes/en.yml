@@ -4,66 +4,91 @@ fields:
 placeholders:
   jss-pagehead:
     - componentName: Header
+      fields:
+        heading: HEADER TITLE
       placeholders:
-        jss-header:
-          - id: site-logo
-          - componentName: PrimaryNav
-            params:
-              itemClassname: primary-nav__item
-              linkClassname: primary-nav__link
-            placeholders:
-              jss-primarynav:
-                - componentName: NavItem
-                  fields:
-                    link: 
-                      href: https://google.com
-                      text: Primary Nav Item 1
-                - componentName: NavItem
-                  fields:
-                    link: 
-                      href: https://google.com
-                      text: Primary Nav Item 2
-                - componentName: NavItem
-                  fields:
-                    link: 
-                      href: https://google.com
-                      text: Primary Nav Item 3
-          - componentName: UtilityNav
-            params:
-              itemClassname: utility-nav__item
-              linkClassname: utility-nav__link
-            placeholders:
-              jss-utilitynav:
-                - componentName: NavItem
-                  fields:
-                    link: 
-                      href: https://google.com
-                      text: Utility Nav Item 1
-                - componentName: NavItem
-                  fields:
-                    link: 
-                      href: https://google.com
-                      text: Utility Nav Item 2
-                - componentName: NavItem
-                  fields:
-                    link: 
-                      href: https://google.com
-                      text: Utility Nav Item 3
+        # jss-header:
+        #   - id: site-logo
+        #   - componentName: PrimaryNav
+        #     params:
+        #       itemClassname: primary-nav__item
+        #       linkClassname: primary-nav__link
+        #     placeholders:
+        #       jss-primarynav:
+        #         - componentName: NavItem
+        #           fields:
+        #             link: 
+        #               href: https://google.com
+        #               text: Primary Nav Item 1
+        #         - componentName: NavItem
+        #           fields:
+        #             link: 
+        #               href: https://google.com
+        #               text: Primary Nav Item 2
+        #         - componentName: NavItem
+        #           fields:
+        #             link: 
+        #               href: https://google.com
+        #               text: Primary Nav Item 3
+        #   - componentName: UtilityNav
+        #     params:
+        #       itemClassname: utility-nav__item
+        #       linkClassname: utility-nav__link
+        #     placeholders:
+        #       jss-utilitynav:
+        #         - componentName: NavItem
+        #           fields:
+        #             link: 
+        #               href: https://google.com
+        #               text: Utility Nav Item 1
+        #         - componentName: NavItem
+        #           fields:
+        #             link: 
+        #               href: https://google.com
+        #               text: Utility Nav Item 2
+        #         - componentName: NavItem
+        #           fields:
+        #             link: 
+        #               href: https://google.com
+        #               text: Utility Nav Item 3
   jss-pagebody:
-    - componentName: TwoColumnLayout
+    - componentName: Row5050
       placeholders:
-        jss-main:
-          - componentName: ContentBlock
+        jss-row-5050-left:
+          - componentName: FeaturedPost
             fields:
-              heading: Content Block, Main 
-          - componentName: Button
-        jss-sidebar:
-          - componentName: ContentBlock
+              date: "2012-05-04T00:00:00Z"
+              image:
+                src: https://placeimg.com/200/250/people
+                alt: Placeholder Image
+        jss-row-5050-right:
+          - componentName: FeaturedPost
             fields:
-              heading: Content Block, Sidebar
-          - componentName: TextInput
-            fields:
-              heading: TextInput
+              date: "2012-05-04T00:00:00Z"
+              image:
+                src: https://placeimg.com/200/250/people
+                alt: Placeholder Image
+    # - componentName: TwoColumnLayout
+    #   placeholders:
+    #     jss-main:
+    #       - componentName: Hero
+    #         fields:
+    #           title: Hero Title
+    #           description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum quis justo in lobortis. Nullam non dapibus nunc. Suspendisse potenti. Donec ut purus metus. Aliquam bibendum enim vitae dolor maximus, ac laoreet eros ultricies. Phasellus ultrices mattis sapien, eu venenatis velit facilisis at. Donec posuere porttitor nunc non aliquet.
+    #           link:
+    #             href: https://www.sitecore.com/
+    #             text: Visit Sitecore
+    #       - componentName: ContentBlock
+    #         fields:
+    #           heading: Content Block, Main 
+    #       - componentName: Button
+    #     jss-sidebar:
+    #       - componentName: ContentBlock
+    #         fields:
+    #           heading: Content Block, Sidebar
+    #       - componentName: TextInput
+    #         fields:
+    #           heading: TextInput
   jss-pagefoot:
     - componentName: Footer
       placeholders:

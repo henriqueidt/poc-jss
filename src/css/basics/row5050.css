@@ -1,0 +1,5 @@
+.row-5050-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
